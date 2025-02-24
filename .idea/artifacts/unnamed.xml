@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="unnamed">
+    <output-path>$USER_HOME$/Desktop/payara/payara-micro-6.2025.1.jar</output-path>
+    <root id="archive" name="unnamed.jar" />
+  </artifact>
+</component>
