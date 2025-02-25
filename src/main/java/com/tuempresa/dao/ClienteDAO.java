@@ -70,7 +70,7 @@ public class ClienteDAO {
         }
     }
 
-    public void actualizarCliente(Cliente cliente) {
+    public void actualizarCliente(int id, Cliente cliente) {
         String query = "UPDATE clientes SET nombre = ?, email = ?, telefono = ? WHERE id = ?";
 
         try (Connection conn = DatabaseConnection.getConnection();
