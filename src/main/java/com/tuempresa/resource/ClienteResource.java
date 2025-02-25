@@ -1,6 +1,7 @@
 package com.tuempresa.resource;
 
 import com.tuempresa.dao.ClienteDAO;
+import com.tuempresa.model.Cliente;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import java.util.List;
@@ -16,5 +17,11 @@ public class ClienteResource {
     @GET
     public List obtenerClientes() {
         return clienteDAO.obtenerClientes();
+    }
+
+    @GET
+    @Path("/{id}")
+    public Cliente obtenerCliente(@PathParam("id") int id) {
+        return clienteDAO.obtenerCliente(id);
     }
 }

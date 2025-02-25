@@ -26,10 +26,11 @@
 
         <!-- Conector de MySQL -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -57,7 +58,4 @@
         </plugins>
         <finalName>jax-rs-test2</finalName>
     </build>
-
-
-
 </project>
